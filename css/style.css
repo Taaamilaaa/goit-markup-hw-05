@@ -86,9 +86,7 @@ ul {
   padding-top: 32px;
   padding-bottom: 31px;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .addres-list :not(:first-child) {
   margin-left: 50px;
@@ -116,9 +114,7 @@ ul {
   padding-top: 32px;
   padding-bottom: 30px;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -130,17 +126,15 @@ ul {
   color: var(--accent-color);
 }
 .link-active::after {
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  display: flex;
-  content: '';
   width: 100%;
   height: 4px;
+  display: block;
 
-  border: 1px solid var(--accent-color);
   border-radius: 2px;
-
   background-color: var(--accent-color);
 }
 
@@ -152,9 +146,7 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-active:hover,
@@ -221,10 +213,10 @@ ul {
   width: 200px;
   height: 50px;
 
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hero-button:hover,
 .hero-button:focus {
   color: var(--complementary-color);
@@ -271,9 +263,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address {
@@ -284,9 +274,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links:hover,
@@ -313,9 +301,9 @@ ul {
   border: none;
   display: inline-block;
 
-  transition-property: color, box-shadow, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list {
@@ -424,13 +412,13 @@ ul {
   text-decoration: none;
 }
 .whole-card {
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .filtr-link:hover .whole-card {
   box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
 }
+
 .filtr-link:focus .whole-card {
   box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
 }
@@ -517,9 +505,7 @@ img {
   text-transform: uppercase;
   color: var(--complementary-color);
 
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work-item:hover .work-overlay {
   opacity: 1;
@@ -544,9 +530,9 @@ img {
 
   background-color: rgba(33, 150, 243, 0.9);
 
-  transition-property: opacity, box-shadow, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filtr-link:hover .img-overlay {
   opacity: 1;
@@ -616,9 +602,7 @@ img {
   margin-right: 10px;
   fill: var(--main-text-color);
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .smartphone-icon {
   width: 10px;
@@ -626,9 +610,7 @@ img {
   margin-right: 10px;
   fill: var(--main-text-color);
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .addres-link:focus .envelope-icon,
 .addres-link:hover .envelope-icon {
@@ -672,9 +654,8 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 3px;
 
-  transition-property: fill, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list {
   display: inline-flex;
@@ -706,9 +687,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-item {
   display: inline-flex;
@@ -722,9 +701,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-item:not(:last-child) {
   margin-right: 10px;
